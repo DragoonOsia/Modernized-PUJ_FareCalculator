@@ -1,0 +1,12 @@
+<resources>
+    <!--Strings-->
+    <string name="title">Modernized PUJ\nGeneral Fare Calculator</string>
+    <string name="dist">Kilometer</string>
+    <string name="disc">Apply 20% discount</string>
+    <string name="calc">Calculate</string>
+    <string name="result">Result will be displayed here</string>
+
+    <!--ViewTitles-->
+    <string name="app_name">Modernized PUJ Fare Calculator</string>
+    <string name="viewTitle">title</string>
+</resources>

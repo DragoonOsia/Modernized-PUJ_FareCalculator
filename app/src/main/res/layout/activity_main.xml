@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/title_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/dist"
+        android:layout_width="@dimen/dist_width"
+        android:layout_height="@dimen/press_height"
+        android:layout_margin="@dimen/margin"
+        android:autofillHints="no"
+        android:hint="@string/dist"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/padd"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <CheckBox
+        android:id="@+id/discountCheckBox"
+        android:layout_width="wrap_content"
+        android:buttonTint="@color/grey"
+        android:layout_height="@dimen/press_height"
+        android:layout_margin="@dimen/margin"
+        android:gravity="center"
+        android:text="@string/disc"
+        android:textColor="@color/black"
+        android:textSize="@dimen/disc_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resultTextView" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/press_height"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/calc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/discountCheckBox" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/result"
+        android:textSize="@dimen/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dist" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
